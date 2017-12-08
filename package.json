@@ -1,0 +1,31 @@
+{
+  "name": "exercise-widget-factory",
+  "version": "1.0.0",
+  "description": "An exercise to display data from widget fatories",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jspm": "^0.16.53"
+  },
+  "dependencies": {},
+  "jspm": {
+    "dependencies": {
+      "bootstrap": "github:distros/bootstrap-less@^3.3.9",
+      "css": "github:systemjs/plugin-css@^0.1.36",
+      "hbs": "github:davis/plugin-hbs@^1.2.3",
+      "jquery": "npm:jquery@^3.2.1",
+      "lodash": "npm:lodash@^4.17.4",
+      "systemjs/plugin-json": "github:systemjs/plugin-json@^0.3.0",
+      "twbs/bootstrap": "github:twbs/bootstrap@4.0.0-alpha.6"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

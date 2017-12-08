@@ -1,0 +1,57 @@
+<thead>
+    <tr>
+        {{#each c}}
+            <td class="text-center">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-danger btn-secondary delete-column" title="delete this column" data-key="{{this}}"><strong>&#x2718;</strong></button>
+                    <div class="dropdown btn-group">
+                        <button class="btn btn-outline-info btn-secondary dropdown-toggle"data-toggle="dropdown" type="button">
+                            <strong>&#x270e;</strong>
+                        </button>
+                        <div class="dropdown-menu">
+                            {{#each ../k}}
+                                <a class="dropdown-item edit-column" data-index="{{@../index}}" data-key="{{this}}" href="#">
+                                    {{column this}}
+                                </a>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </td>
+        {{/each}}
+        <td class="text-center">
+            <div class="btn-group" role="group">
+                <div class="dropdown">
+                    <button class="btn btn-secondary btn-success dropdown-toggle" data-toggle="dropdown" type="button">
+                        <strong>+</strong>
+                    </button>
+                    <div class="dropdown-menu">
+                        {{#each k}}
+                            <a class="dropdown-item add-column" data-key="{{this}}" href="#">
+                                {{column this}}
+                            </a>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        {{#each c}}
+            <th class="text-center">
+                {{column this}}
+            </th>
+        {{/each}}
+    </tr>
+</thead>
+<tbody>
+    {{#each d}}
+        <tr>
+            {{#each ../c}}
+                <td>
+                    {{value this ../this}}
+                </td>
+            {{/each}}
+        </tr>
+    {{/each}}
+</tbody>
