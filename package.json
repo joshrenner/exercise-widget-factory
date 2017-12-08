@@ -4,7 +4,7 @@
   "description": "An exercise to display data from widget fatories",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "http-server -o"
   },
   "author": "",
   "license": "ISC",
